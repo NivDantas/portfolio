@@ -1,8 +1,9 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 @utility pause {
   animation-play-state: paused;
 }
+
 @theme {
   --color-site: #121717;
   --color-site-800: #1d2323;
@@ -31,4 +32,26 @@
   }
 }
  */
+}
+@layer components {
+  .hover-underline {
+    display: inline-block;
+    position: relative;
+  }
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0.125rem;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
