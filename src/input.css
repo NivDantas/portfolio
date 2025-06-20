@@ -1,8 +1,14 @@
 @import "tailwindcss";
+
+@utility pause {
+  animation-play-state: paused;
+}
 @theme {
   --color-site: #121717;
+  --color-site-800: #1d2323;
+  --color-detalhe: #364545;
   --animate-glowing: glowing 20s linear infinite;
-  --animate-stroke: stroke 2s linear infinite;
+  --animate-stroke: stroke 2s infinite;
   @keyframes glowing {
     0% {
       background-position: 0 0;
@@ -15,26 +21,14 @@
     }
   }
   @keyframes stroke {
-    0% {
-      stroke: #afc3c3;
-    }
-    25% {
-      stroke: #679393;
-    }
     50% {
-      stroke: #355959;
+      stroke: rgba(184, 245, 245, 0.5);
     }
-    75% {
-      stroke: #679393;
-    }
-    100% {
-      stroke: #afc3c3;
-    }
+  }
+  /* @layer components {
+  .efeito {
+    @apply before:bg-linear-[45deg,#afc3c3,#679393,#355959,#679393,#afc3c3]  before:absolute before:-top-0.25 before:-left-0.25 before:bg-size-[400%] before:-z-1 before:w-[calc(100%_+_2px)] before:h-[calc(100%_+_2px)] before:transition-opacity before:ease-in-out before:duration-300 before:rounded-lg before:animate-glowing  before:blur-sm;
   }
 }
-
-@layer components {
-  .efeito {
-    @apply before:bg-[#364545] hover:before:bg-linear-[45deg,#afc3c3,#679393,#355959,#679393,#afc3c3] hover:border-transparent before:absolute before:-top-0.25 before:-left-0.25 before:bg-size-[400%] before:-z-1 before:w-[calc(100%_+_2px)] before:h-[calc(100%_+_2px)] before:transition-opacity before:ease-in-out before:duration-300 before:rounded-lg before:opacity-100 before:animate-glowing hover:before:opacity-100;
-  }
+ */
 }
