@@ -5,10 +5,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-site flex justify-center font-[Work_Sans]">
+  <header>
+    <div class="flex flex-col gap-1 absolute right-5 top-5">
+      <span class="w-5 border-1 border-white rounded-full"></span>
+      <span class="w-5 border-1 border-white rounded-full "></span>
+      <span class="w-5 border-1 border-white rounded-full"></span>
+    </div>
+  </header>
+  <main class="max-w-xs">
+    <h1 class="text-white text-2xl mt-10 text-center tracking-wider">Nivaldo Dantas</h1>
+    <h3 class="text-neutral-500 text-sm text-center mt-1">Desenvolvedor Front End</h2>
+      <p class="text-neutral-300 text-xs mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque repudiandae libero exercitationem nemo, sint consequatur quaerat delectus illo ipsam blanditiis non, sapiente cum qui corporis incidunt illum voluptatibus ratione.</p>
+      <section class="mt-5">
+        <h2 class="text-white text-xl">Educação</h2>
+        <div class="border-1 border-[#364545] rounded-lg p-4 grid grid-cols-1 relative mt-1.5">
+          <h3 class="text-white text-sm break-normal">Bacharelado em Engenharia de Software</h3>
+          <h4 class="text-neutral-400 text-[10px] mt-1">Instituto Federal do Amazonas - IFAM</h4>
+          <h4 class="text-neutral-400 text-[10px] mt-2 justify-self-end">2020-2025</h4>
+          <span class="w-5 h-1 absolute bg-gradient-to-b from-[#344C50] to-[#356C6C] left-4 top-17"></span>
+        </div>
+        <div class="bg-site rounded-lg p-4 grid grid-cols-1 relative mt-5 group efeito">
+          <h3 class="text-white text-sm break-normal">Formação Continuada</h3>
+          <h4 class="text-neutral-400 text-[10px] mt-1">Projeto Aranouá - Instituto Federal do Amazonas</h4>
+          <h4 class="text-neutral-400 text-[10px] mt-2 justify-self-end">2021-2024</h4>
+          <span class="w-5 h-1 absolute bg-gradient-to-b from-[#344C50] to-[#356C6C] left-4 top-17 "></span>
+          <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -bottom-3 justify-self-center fill-site stroke-[url(#glowGradient)] group">
+            <linearGradient id="glowGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#364545" />
+              <stop offset="100%" stop-color="#364545" />
+            </linearGradient>
+            <path d="M1.25 10.76C1.25 12.36 2.373 13.754 3.957 13.987C5.025 14.144 6.105 14.266 7.195 14.351C7.661 14.388 8.088 14.632 8.348 15.022L11 19L13.652 15.022C13.912 14.632 14.339 14.388 14.805 14.352C15.895 14.266 16.975 14.144 18.043 13.987C19.627 13.754 20.75 12.361 20.75 10.759V4.741C20.75 3.139 19.627 1.746 18.043 1.513C15.711 1.17072 13.357 0.99926 11 1C8.608 1 6.256 1.175 3.957 1.513C2.373 1.746 1.25 3.14 1.25 4.741V10.759V10.76Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
 
+        </div>
+
+        <h2 class="text-white text-xl mt-6">Experiência</h2>
+        <div class="bg-site rounded-lg p-4 grid grid-cols-1 relative mt-1.5 group efeito">
+          <h3 class="text-white text-sm break-normal">Estagiário</h3>
+          <h4 class="text-neutral-400 text-[10px] mt-1">Tribunal de Contas do Amazonas - TCE/AM</h4>
+          <h4 class="text-neutral-400 text-[10px] mt-2 justify-self-end">2024-2025</h4>
+          <span class="w-5 h-1 absolute bg-gradient-to-b from-[#344C50] to-[#356C6C] left-4 top-17 "></span>
+          <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -bottom-3 justify-self-center fill-site stroke-[url(#glowGradient)] group">
+            <linearGradient id="glowGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#364545" />
+              <stop offset="100%" stop-color="#364545" />
+            </linearGradient>
+            <path d="M1.25 10.76C1.25 12.36 2.373 13.754 3.957 13.987C5.025 14.144 6.105 14.266 7.195 14.351C7.661 14.388 8.088 14.632 8.348 15.022L11 19L13.652 15.022C13.912 14.632 14.339 14.388 14.805 14.352C15.895 14.266 16.975 14.144 18.043 13.987C19.627 13.754 20.75 12.361 20.75 10.759V4.741C20.75 3.139 19.627 1.746 18.043 1.513C15.711 1.17072 13.357 0.99926 11 1C8.608 1 6.256 1.175 3.957 1.513C2.373 1.746 1.25 3.14 1.25 4.741V10.759V10.76Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </div>
+
+
+        <h2 class="text-white text-xl mt-6">Idiomas</h2>
+        <div class="border-1 border-[#364545] rounded-lg py-3 px-4 grid grid-cols-1 relative mt-1.5">
+          <h3 class="text-white text-sm break-normal">Português</h3>
+          <h4 class="text-neutral-400 text-[10px] mt-1">Nativo</h4>
+        </div>
+        <div class="border-1 border-[#364545] rounded-lg py-3 px-4 grid grid-cols-1 relative mt-1.5 ">
+          <h3 class="text-white text-sm break-normal">Inglês</h3>
+          <h4 class="text-neutral-400 text-[10px] mt-1">Avançado (C1)</h4>
+        </div>
+
+
+      </section>
+  </main>
 </body>
 
 </html>
