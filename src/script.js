@@ -43,6 +43,8 @@ groupTabTwo.addEventListener("click", (event) => {
     groupTabTwo.appendChild(svgIconTwo);
   }
 });
+if (localStorage.getItem("color-theme") === null)
+  localStorage.setItem("color-theme", "dark");
 if (
   localStorage.getItem("color-theme") === "dark" ||
   (
