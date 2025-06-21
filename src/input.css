@@ -7,51 +7,17 @@
 @theme {
   --color-site: #121717;
   --color-site-800: #1d2323;
+  --color-site-700: #282f2f;
+  --color-site-600: #464d4d;
+  --color-site-500: #646a6a;
+  --color-site-300: #9ea0a0;
   --color-detalhe: #364545;
   --animate-glowing: glowing 20s linear infinite;
   --animate-stroke: stroke 2s infinite;
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
+
+  @layer components {
+    .hover-underline {
+      @apply inline-block relative after:absolute after:w-full after:h-px after:bottom-0 after:left-0 after:bg-site dark:after:bg-white after:transition-transform after:duration-300 after:ease-out after:[transform:scaleX(0)] after:[transform-origin:bottom_right] hover:after:[transform:scaleX(1)] hover:after:[transform-origin:bottom_left];
     }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  @keyframes stroke {
-    50% {
-      stroke: rgba(184, 245, 245, 0.5);
-    }
-  }
-  /* @layer components {
-  .efeito {
-    @apply before:bg-linear-[45deg,#afc3c3,#679393,#355959,#679393,#afc3c3]  before:absolute before:-top-0.25 before:-left-0.25 before:bg-size-[400%] before:-z-1 before:w-[calc(100%_+_2px)] before:h-[calc(100%_+_2px)] before:transition-opacity before:ease-in-out before:duration-300 before:rounded-lg before:animate-glowing  before:blur-sm;
-  }
-}
- */
-}
-@layer components {
-  .hover-underline {
-    display: inline-block;
-    position: relative;
-  }
-  .hover-underline::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0.125rem;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .hover-underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
   }
 }
